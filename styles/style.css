@@ -1,5 +1,520 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 23.4px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 0px 10px 0px 10px;
+}
+
+/*КАМЕРА REC + КРАСНАЯ ТОЧКА*/
+
+.rec-element {
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  line-height: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  text-align: center; 
+  text-transform: uppercase;
+  color: var(--button-bg-color);
+  padding-right: 8px;
+  margin: 20px; 
+}
+
+.rec-element::after {
+  content: ""; 
+  background-color: var(--brand-accent);
+  fill: var(--brand-accent);
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--rec-element-color);
+  filter: drop-shadow(0px 0px 4px var(--brand-accent));
+  margin-left: 10px;
+  margin-bottom: 1px;
+}
+
+/*УГОЛКИ КАМЕРЫ*/
+
+.frame-element {
+  position: relative;
+}
+
+.frame-element::before,
+.frame-element::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.frame-element::before {
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--corner-color);
+  border-right: 1px solid var(--corner-color);
+}
+
+.frame-element::after {
+  left: 10px;
+  bottom: 10px;
+  border-left: 1px solid var(--corner-color);
+  border-bottom: 1px solid var(--corner-color);
+}
+
+/*HEADER*/
+
+.header {
+  min-height: 100vh;
+  padding: 20px;
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  justify-items: end;
+}
+
+/*ПЕРЕКЛЮЧАТЕЛИ ТЕМЫ*/
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 0 13px;
+  color: var(--button-bg-color);
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--button-bg-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--button-bg-color);
+  outline-offset: 4px; 
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+  outline-offset: 1px; 
+  cursor: pointer;
+}
+
+/*ЗАГОЛОВОК FOCUS*/
+
+.header__title {
+  color: var(--header-bg-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
+  font-family: var(--font-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* межстрочный интервал по макету ~95.7px*/
+}
+
+.header__topic-description {
+  color: var(--heading-text-color);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+  background-color: var(--title-decor);
+}
+
+.header__layout{
+  font-weight: 700;
+  background-color: var(--brand-accent);
+  font-size: var(--font-size);
+  line-height: 23.4px;
+  color: var(--sub-text-color);
+}
+
+/*ГРИД ДЛЯ СЕКЦИЙ*/
+
+.why-hard {
+  display: grid;
+}
+
+.distraction-sources {
+  display: grid;
+}
+
+.advices {
+  display: grid;
+}
+
+.section__big-header {
+  color: var(--subtitle-text-color);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+  margin-top: 41px;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 21px;
+}
+
+article:last-of-type {
+  margin-bottom: 0px;
+}
+
+.section__text {
+  color: var(--main-text-color);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--text-line-height);
+  padding-bottom: 20px;
+}
+
+.distraction-sources__template {
+  padding-top: var(--gap-small);
+}
+
+.section__advices__five-advice {
+  color: var(--heading-text-color);
+  background-color: var(--title-decor);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+  margin-bottom: 20px;
+}
+
+/*ССЫЛКИ*/
+
+.link-external {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--brand-accent);
+  cursor: pointer;
+}
+
+.link-external:hover {
+  border-bottom: 1px solid var(--unique-decoration-color);
+}
+
+.link-external:focus {
+  outline: none;
+}
+
+.link-external:focus-visible {
+  outline: 1px solid var(--unique-decoration-color);
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-section__body {
+  display: grid;
+}
+
+.image-section__item {
+  inline-size: 100%;
+  gap: 10px;
+}
+
+/*ЗАГОЛОВОК А МОЖНО В КАРТИНКАХ*/
+
+.image-section__title { 
+  color: var(--heading-text-color);
+  background-color: var(--brand-accent);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+  margin-top: 50px;
+}
+
+/*ЗАГОЛОВОК 5 ПРОСТЫХ СОВЕТОВ*/
+
+.section__advices-five { 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--brand-accent);
+  color: var(--heading-text-color);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+}
+
+/*ПОДЗАГОЛОВКИ*/
+
+.section__sub-header { 
+  margin: 0px 0px 10px 0px;
+  background-color: var(--brand-accent);
+  color: var(--heading-text-color);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--text-line-height);
+}
+
+.header-advices {
+  font-weight: 400;
+  margin-bottom: 12px;
+  background-color: var(--brand-accent);
+}
+
+/*МЕДИА-ЗАПРОСЫ*/
+
+
+/*TABLET ВЕРСИЯ*/
+
+@media ( min-width: 768px ) {
+
+  .header {
+    padding: 20px 20px 20px 0px;
+  }
+
+  main {
+    padding: 0px 20px;
+  }
+
+  .header__title {
+    justify-self: start;
+  }
+
+  .header__layout {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 51%;
+  }
+
+  .rec-element {
+    top: 24px;
+    right: 29px;
+  }
+
+  .frame-element::before {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .frame-element::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .why-hard {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    margin: 60px 0px 20px 0px;
+  }
+
+  .section__header {
+    margin-top: 0px;
+  }
+
+  .distraction-sourses__template {
+    padding-top: 0px;
+    margin-top: 63px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .advices {
+    margin-top: 84px;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .advices-template {
+    padding: 0;
+  }
+  
+  .image-section {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid; 
+    gap: 20px;
+    max-width: 100%;
+    margin-top: 77px;
+  }
+
+  .image-section__title {
+    grid-column: span 3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .image-section__item {
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .image-section__item-sunset {
+    grid-column: span 2;
+  }
+
+  .image-section__item-icecream {
+    grid-row: span 2;
+  }
+
+  .image-section__item-music {
+    grid-row: span 2;
+  }
+
+  .image-section__item-walking {
+    grid-column: span 2;
+  }
+
+  .image-section__item-books {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .menu {
+    margin-top: 60px;
+  }
+
+}
+
+.footer__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  color: var(--footer-bg-color);
+  font-family: var(--font-family);
+  font-size: clamp(7.25rem, 7.106rem + 0.616vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px var(--shadow-color);
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  min-height: 668px;
+  margin-top: 40px;
+}
+
+/*DESKTOP ВЕРСИЯ*/
+
+@media (min-width: 1024px) {
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .menu__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__layout {
+    grid-template-columns: 64%;
+  }
+
+  .header__theme-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .header__theme-menu-list {
+    padding: 0;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .why-hard {
+    column-gap: 10px;
+    margin: 60px 0px 18px 0px;
+  }
+
+  .section__topic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .advices {
+    margin-top: 83px;
+    column-gap: 10px;
+  }
+
+  .image-section {
+    margin-top: 76px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page.theme-auto {
+    --background-color: #fff1f7;
+    --main-text-color: #353430;
+    --heading-text-color: #353430;
+    --subtitle-text-color: #353430;
+    --button-text-color: #353430;
+    --corner-color: #353430;
+    --unique-decoration-color: #353430;
+    --brand-accent: #ff8dcb;
+    --title-decor: #ff8dcb;
+    --shadow-color: #ff8dcb;
+    --header-bg-color: #ffc2e6;
+    --footer-bg-color: #ffc2e6;
+    --button-hover-bg: rgba(50, 49, 45, 0.40);
+    --rec-element-color: transparent;
+    --font-family: 'IBM Plex Mono', monospace;
+    --text-font-size: 18px;
+    --text-line-height: 23.4px;
+    --gap-small: 12px;
+    --gap-medium: 23px;
+    
+    background-image: url(../images/cover-image-light.png);
+  }
 }

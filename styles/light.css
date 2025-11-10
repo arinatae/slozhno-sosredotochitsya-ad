@@ -11,7 +11,7 @@
   --heading-text-color: #353430;
   --main-text-color: #353430;
   --rec-element-color: transparent;
-  --shadow-color: #ff8dcb;
+  --shadow-color: #FF0070;
   --subtitle-text-color: #353430;
   --text-font-size: 18px;
   --text-line-height: 23.4px;
@@ -34,7 +34,7 @@
     --unique-decoration-color: #353430;
     --brand-accent: #ff8dcb;
     --title-decor: #ff8dcb;
-    --shadow-color: #ff8dcb;
+    --shadow-color: #FF0070;
     --header-bg-color: #ffc2e6;
     --footer-bg-color: #ffc2e6;
     --button-hover-bg: rgba(50, 49, 45, 0.40);

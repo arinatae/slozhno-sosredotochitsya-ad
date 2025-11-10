@@ -18,16 +18,34 @@
   --title-decor: #ff8dcb;
   --unique-decoration-color: #353430;
   --footer-bg-color: #ffc2e6;
+  --button-bg-color: #353430; /* ← добавлено */
   
   background-image: url(../images/cover-image-light.png);
 }
 
-@media (width <= 1024px) {
-  .page.theme-light .header__topic-name {
+@media (prefers-color-scheme: light) {
+  .page.theme-auto {
+    --background-color: #fff1f7;
+    --main-text-color: #353430;
+    --heading-text-color: #353430;
+    --subtitle-text-color: #353430;
+    --button-text-color: #353430;
+    --corner-color: #353430;
+    --unique-decoration-color: #353430;
+    --brand-accent: #ff8dcb;
+    --title-decor: #ff8dcb;
     --shadow-color: #ff8dcb;
-  }
-
-  .page.theme-light .footer__title {
-    --shadow-color: #ff8dcb;
+    --header-bg-color: #ffc2e6;
+    --footer-bg-color: #ffc2e6;
+    --button-hover-bg: rgba(50, 49, 45, 0.40);
+    --rec-element-color: transparent;
+    --font-family: 'IBM Plex Mono', monospace;
+    --text-font-size: 18px;
+    --text-line-height: 23.4px;
+    --gap-small: 12px;
+    --gap-medium: 23px;
+    --button-bg-color: #353430;
+    
+    background-image: url(../images/cover-image-light.png);
   }
 }

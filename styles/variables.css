@@ -1,12 +1,12 @@
 :root {  
   /*Цвета*/
-  --background-color:#fff1f7;
+  --bg-color:#fff1f7;
   --title-color:#ffc2e6;
   --text-background-decorate-color:#ff8dcb;
-  --text-first-color:#353430;
+  --main-text-color:#353430;
   --second-color:#353430;
-  --description-color:#353430;
-  --decor-color:#353430;
+  --topic-description-color:#353430;
+  --decoration-color:#353430;
   --title-shadow-color:#ff8dcb;
   --title-footer-shadow-color:#ff8dcb;
   --link-shadow-color:#ff8dcb;

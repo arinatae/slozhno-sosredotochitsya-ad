@@ -62,17 +62,6 @@
   --shdw-footer-title-color:#FF0070;
   }
 
-  .rec-decor {
-    inset-inline-end: 30px;
-    position: absolute;
-    display: inline-flex;
-    gap: 10px;
-    visibility: var(--rec-decor-visibility, visible);
-    inset-block-start: 20px;
-    align-items: center;
-    z-index: -1;
-  }
-    
   .rec-decor::before {
     content: "REC";
     line-height: 24px;
@@ -89,6 +78,17 @@
     inline-size: 9px;
   }
 
+  .rec-decor {
+    inset-inline-end: 30px;
+    position: absolute;
+    display: inline-flex;
+    gap: 10px;
+    visibility: var(--rec-decor-visibility, visible);
+    inset-block-start: 20px;
+    align-items: center;
+    z-index: -1;
+  }
+    
   .page {
     --main-bg-color: var(#000028);
     --page-bg-image: url("../images/cover-image-dark.png");

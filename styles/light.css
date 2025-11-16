@@ -13,12 +13,13 @@
   --shdw-link-color:#ff8dcb;
 }
 
+.theme-light .page {
+  --page-bg-image: url("../images/cover-image-light.png");
+  --main-bg-color: var(#fff1f7);
+}
+
 @media (width>=1024px) {
   :root.theme-light {
     --shdw-footer-title-color:#ff0070;
   }
-}
-.theme-light .page {
-  --page-bg-image: url("../images/cover-image-light.png");
-  --main-bg-color: var(#fff1f7);
 }

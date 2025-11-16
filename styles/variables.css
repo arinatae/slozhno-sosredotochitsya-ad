@@ -5,7 +5,7 @@
   --page-padding:10px;
   --font-size:18px;
   --bg-color:#fff1f7;
-  --page-line-height:23.4px;
+  --base-line-height:23.4px;
   --gap-card:10px;
   --scd-color:#353430;
   --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

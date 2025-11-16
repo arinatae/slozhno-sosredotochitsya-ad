@@ -15,7 +15,7 @@
   /*Типография*/
   --main-font-family:'IBM Plex Mono';
   --bold-text-weight:700;
-  --page-font-size:18px;
+  --font-size:18px;
   --page-line-height:23.4px;
   --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   /*Размеры*/

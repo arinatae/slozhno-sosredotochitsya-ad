@@ -1,14 +1,8 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --background-color:#fff1f7;
   --title-color:#ffc2e6;
-  --text-background-decorate-color:#ff8dcb;
-  --text-first-color:#353430;
+  --brand-accent:#ff8dcb;
+  --main-text-color:#353430;
   --button-color:#353430;
   --second-color:#353430;
   --description-color:#353430;

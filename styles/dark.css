@@ -1,14 +1,8 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
   --background-color:#000028;
   --title-color:#DB00FF;
-  --text-background-decorate-color:#FF0070;
-  --text-first-color:#000028;
+  --brand-accent:#FF0070;
+  --main-text-color:#000028;
   --button-color:#FF0070;
   --second-color:#FF0070;
   --description-color:#F1B2CE;
@@ -56,8 +50,8 @@
   :root {
   --background-color:#000028;
   --title-color:#DB00FF;
-  --text-background-decorate-color:#FF0070;
-  --text-first-color:#000028;
+  --brand-accent:#FF0070;
+  --main-text-color:#000028;
   --button-color:#FF0070;
   --second-color:#FF0070;
   --description-color:#F1B2CE;

@@ -1,6 +1,5 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  font-family: var(--main-font-family, "IBM Plex mono", monospace);
+  font-family: var(--main-font-family/*, "IBM Plex mono", monospace*/);
   background-color: var(--background-color,#fff1f7);
   background-image: var(
     --page-background-image,
@@ -72,7 +71,7 @@
   border: none;
   padding: 4px 13px;
   color: var(--decor-color);
-  font-size: var(--page-font-size);
+  font-size: var(--font-size);
   line-height: var(--page-line-height);
   text-transform: lowercase;
   background-color: inherit;
@@ -119,7 +118,7 @@
   grid-column: 1 / 4;
   color: var(--second-color);
   font-weight: var(--bold-text-weight);
-  font-size: var(--page-font-size);
+  font-size: var(--font-size);
   line-height: var(--page-line-height);
 }
 
@@ -127,7 +126,7 @@
   grid-column: 1 / 4;
   color: var(--description-color);
   font-weight: var(--bold-text-weight);
-  font-size: var(--page-font-size);
+  font-size: var(--font-size);
   line-height: var(--page-line-height);
   background-color: var(--first-text-color);
 }
@@ -147,7 +146,7 @@
 .main__area-card__text {
   grid-column: 1 / 4;
   color: var(--description-color);
-  font-size: var(--page-font-size);
+  font-size: var(--font-size);
   line-height: var(--page-line-height);
 }
 
@@ -188,11 +187,11 @@
 }
 
 .subtitle {
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   font-weight: var(--bold-text-weight);
-  font-size: var(--page-font-size);
+  font-size: var(--font-size);
   line-height: var(--page-line-height);
-  background-color: var(--text-background-decorate-color, #FF8DCB);
+  background-color: var(--brand-accent, #FF8DCB);
 }
 
 @media (width >= 768px) {

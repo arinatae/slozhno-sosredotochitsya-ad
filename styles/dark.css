@@ -1,97 +1,96 @@
 :root.theme-dark {
-  --bg-color:#000028;
-  --title-color:#DB00FF;
+  --title-footer-shadow-color:#FF0070;
   --brand-accent:#FF0070;
-  --main-text-color:#000028;
   --btn-color:#FF0070;
+  --title-color:#DB00FF;
+  --button-hover-color:#FF007066;
+  --main-text-color:#000028;
+  --decoration-color:#FF0070;
+  --bg-color:#000028;
+  --link-shadow-color:#FF0070;
   --second-color:#FF0070;
   --topic-description-color:#F1B2CE;
-  --decoration-color:#FF0070;
   --title-shadow-color:#FF0070;
-  --title-footer-shadow-color:#FF0070;
-  --link-shadow-color:#FF0070;
-  --button-hover-color:#FF007066;
-}
-
-.theme-dark  .page {
-  --main-bg-color: var(#000028);
-  --page-background-image: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .rec-decor {
-  position: absolute;
-  z-index: -1;
-  visibility: var(--rec-decor-visibility, visible);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  inset-inline-end: 30px;
   inset-block-start: 20px;
+  display: inline-flex;
+  visibility: var(--rec-decor-visibility, visible);
+  position: absolute;
+  inset-inline-end: 30px;
+  align-items: center;
+  z-index: -1;
+  gap: 10px;
 }
   
 .theme-dark .rec-decor::before {
   content: "REC";
-  color: var(--accent-color, #ff0070);
   line-height: 24px;
+  color: var(--accent-color, #ff0070);
 
 }
 
 .theme-dark .rec-decor::after {
   content: "";
+  background: var(--accent-color, #ff0070);
+  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
-  background: var(--accent-color, #ff0070);
-  inline-size: 9px;
   block-size: 9px;
+  inline-size: 9px;
+}
+
+.theme-dark  .page {
+  --page-background-image: url("../images/cover-image-dark.png");
+  --main-bg-color: var(#000028);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --title-shadow-color:#FF0070;
-  --brand-accent:#FF0070;
-  --title-footer-shadow-color:#FF0070;
-  --btn-color:#FF0070;
-  --topic-description-color:#F1B2CE;
-  --button-hover-color:#FF007066;
-  --link-shadow-color:#FF0070;
-  --main-text-color:#000028;
-  --decoration-color:#FF0070;
-  --bg-color:#000028;
+    --btn-color:#FF0070;
   --title-color:#DB00FF;
+  --title-shadow-color:#FF0070;
+  --bg-color:#000028;
+  --link-shadow-color:#FF0070;
+  --brand-accent:#FF0070;
   --second-color:#FF0070;
+  --main-text-color:#000028;
+  --button-hover-color:#FF007066;
+  --decoration-color:#FF0070;
+  --topic-description-color:#F1B2CE;
+  --title-footer-shadow-color:#FF0070;
+  }
+
+  .rec-decor {
+    inset-inline-end: 30px;
+    position: absolute;
+    display: inline-flex;
+    gap: 10px;
+    visibility: var(--rec-decor-visibility, visible);
+    inset-block-start: 20px;
+    align-items: center;
+    z-index: -1;
+  }
+    
+  .rec-decor::before {
+    content: "REC";
+    line-height: 24px;
+    color: var(--accent-color, #ff0070);
+  }
+
+  .rec-decor::after {
+    content: "";
+    box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+    background: var(--accent-color, #ff0070);
+    display: inline-block;
+    border-radius: 50%;
+    block-size: 9px;
+    inline-size: 9px;
   }
 
   .page {
     --main-bg-color: var(#000028);
     --page-background-image: url("../images/cover-image-dark.png");
-  }
-
-  .rec-decor {
-    position: absolute;
-    z-index: -1;
-    visibility: var(--rec-decor-visibility, visible);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    inset-inline-end: 30px;
-    inset-block-start: 20px;
-  }
-    
-  .rec-decor::before {
-    content: "REC";
-    color: var(--accent-color, #ff0070);
-    line-height: 24px;
-
-  }
-
-  .rec-decor::after {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
-    background: var(--accent-color, #ff0070);
-    inline-size: 9px;
-    block-size: 9px;
   }
 }

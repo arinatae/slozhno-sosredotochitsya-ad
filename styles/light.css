@@ -1,16 +1,16 @@
 :root.theme-light {
+  --title-shadow-color:#ff8dcb;
+  --btn-color:#353430;
+  --title-footer-shadow-color:#ff8dcb;
   --bg-color:#fff1f7;
+  --second-color:#353430;
+  --button-hover-color:#32312D66;
+  --main-text-color:#353430;
+  --topic-description-color:#353430;
   --title-color:#ffc2e6;
   --brand-accent:#ff8dcb;
-  --main-text-color:#353430;
-  --btn-color:#353430;
-  --second-color:#353430;
-  --topic-description-color:#353430;
   --decoration-color:#353430;
-  --title-shadow-color:#ff8dcb;
-  --title-footer-shadow-color:#ff8dcb;
   --link-shadow-color:#ff8dcb;
-  --button-hover-color:#32312D66;
 }
 
 @media (width>=1024px) {
@@ -19,6 +19,6 @@
   }
 }
 .theme-light .page {
-  --main-bg-color: var(#fff1f7);
   --page-background-image: url("../images/cover-image-light.png");
+  --main-bg-color: var(#fff1f7);
 }

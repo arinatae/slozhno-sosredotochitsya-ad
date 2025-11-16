@@ -1,6 +1,6 @@
 .page {
   font-family: var(--main-font-family);
-  bg-color: var(--bg-color,#fff1f7);
+  background-color: var(--bg-color,#fff1f7);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,7 +33,7 @@
 }
 
 .header__theme-menu-button {
-  bg-color: inherit;
+  background-color: inherit;
   color: var(--decoration-color);
   font-size: var(--font-size);
   border: none;
@@ -114,7 +114,7 @@
   font-weight: var(--bold-text-weight);
   font-size: var(--font-size);
   line-height: var(--page-line-height);
-  bg-color: var(--first-text-color);
+  background-color: var(--first-text-color);
 }
 
 .main__area-card {
@@ -155,7 +155,7 @@
 }
 
 .subtitle {
-  bg-color: var(--brand-accent, #FF8DCB);
+  background-color: var(--brand-accent, #FF8DCB);
   color: var(--main-text-color);
   font-size: var(--font-size);
   font-weight: var(--bold-text-weight);

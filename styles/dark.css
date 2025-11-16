@@ -13,10 +13,10 @@
   --shdw-title-color:#FF0070;
 }
 
-.theme-dark .rec-decor {
+.theme-dark .rec-element {
   inset-block-start: 20px;
   display: inline-flex;
-  visibility: var(--rec-decor-visibility, visible);
+  visibility: var(--rec-element-visibility, visible);
   position: absolute;
   inset-inline-end: 30px;
   align-items: center;
@@ -24,14 +24,14 @@
   gap: 10px;
 }
   
-.theme-dark .rec-decor::before {
+.theme-dark .rec-element::before {
   content: "REC";
   line-height: 24px;
   color: var(--accent-color, #ff0070);
 
 }
 
-.theme-dark .rec-decor::after {
+.theme-dark .rec-element::after {
   content: "";
   background: var(--accent-color, #ff0070);
   box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
@@ -49,26 +49,26 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --btn-color:#FF0070;
-  --title-color:#DB00FF;
-  --shdw-title-color:#FF0070;
-  --bg-color:#000028;
-  --shdw-link-color:#FF0070;
-  --brand-accent:#FF0070;
-  --scd-color:#FF0070;
-  --main-text-color:#000028;
-  --button-hover-color:#FF007066;
-  --decoration-color:#FF0070;
-  --topic-description-color:#F1B2CE;
-  --shdw-footer-title-color:#FF0070;
+    --title-color:#DB00FF;
+    --shdw-title-color:#FF0070;
+    --bg-color:#000028;
+    --shdw-link-color:#FF0070;
+    --brand-accent:#FF0070;
+    --scd-color:#FF0070;
+    --main-text-color:#000028;
+    --button-hover-color:#FF007066;
+    --decoration-color:#FF0070;
+    --topic-description-color:#F1B2CE;
+    --shdw-footer-title-color:#FF0070;
   }
 
-  .rec-decor::before {
+  .rec-element::before {
     content: "REC";
     line-height: 24px;
     color: var(--accent-color, #ff0070);
   }
 
-  .rec-decor::after {
+  .rec-element::after {
     content: "";
     box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
     background: var(--accent-color, #ff0070);
@@ -78,12 +78,12 @@
     inline-size: 9px;
   }
 
-  .rec-decor {
+  .rec-element {
     inset-inline-end: 30px;
     position: absolute;
     display: inline-flex;
     gap: 10px;
-    visibility: var(--rec-decor-visibility, visible);
+    visibility: var(--rec-element-visibility, visible);
     inset-block-start: 20px;
     align-items: center;
     z-index: -1;

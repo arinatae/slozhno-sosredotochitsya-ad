@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setTheme(theme) {
-  document.body.className = 'page';
-document.body.classList.add(`theme-${theme}`);
+  document.documentElement.className = '';
+  document.documentElement.classList.add(`theme-${theme}`);
   localStorage.setItem('theme', theme);
 }
 
@@ -50,4 +50,3 @@ function setActiveButton(buttonsArray, theme) {
     autoButton.setAttribute('disabled', true);
   }
 }
-

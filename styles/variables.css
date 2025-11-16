@@ -1,17 +1,29 @@
-:root {
-  --background-color: #000028;
-  --brand-accent: #ff0070;
-  --button-bg-color: #ff0070;
-  --button-hover-border: rgba(255, 0, 112, 0.40);
-  --corner-color: #FF0070;
-  --font-family: 'IBM Plex Mono', monospace;
-  --font-size: 18px;
-  --gap-medium: 23px;
-  --heading-text-color: #000028;
-  --main-text-color: #f1b2ce;
-  --small-gap: 12px;
-  --sub-text-color: #000028;
-  --subtitle-text-color: #FF0070;
-  --text-line-height: 23.4px;
-  --title-color: #db00ff;
+:root {  
+  /*Цвета*/
+  --background-color:#fff1f7;
+  --title-color:#ffc2e6;
+  --text-background-decorate-color:#ff8dcb;
+  --text-first-color:#353430;
+  --second-color:#353430;
+  --description-color:#353430;
+  --decor-color:#353430;
+  --title-shadow-color:#ff8dcb;
+  --title-footer-shadow-color:#ff8dcb;
+  --link-shadow-color:#ff8dcb;
+  /*Задний фон*/
+  --page-background-image:url("../images/cover-image-light.png");
+  /*Типография*/
+  --main-font-family:'IBM Plex Mono';
+  --bold-text-weight:700;
+  --page-font-size:18px;
+  --page-line-height:23.4px;
+  --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  /*Размеры*/
+  --page-padding:10px;
+  --cards-gap:10px;
+}
+@media (width>=1024px) {
+  :root {
+    --title-footer-shadow-color:#ff0070;
+  }
 }

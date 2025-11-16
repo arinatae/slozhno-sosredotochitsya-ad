@@ -1,51 +1,30 @@
-.page.theme-light {
-  --background-color: #fff1f7;
-  --brand-accent: #ff8dcb;
-  --button-hover-bg: rgba(50, 49, 45, 0.40);
-  --button-text-color: #353430;
-  --corner-color: #353430;
-  --font-family: 'IBM Plex Mono', monospace;
-  --gap-medium: 23px;
-  --gap-small: 12px;
-  --header-bg-color: #ffc2e6;
-  --heading-text-color: #353430;
-  --main-text-color: #353430;
-  --rec-element-color: transparent;
-  --shadow-color: #FF0070;
-  --subtitle-text-color: #353430;
-  --text-font-size: 18px;
-  --text-line-height: 23.4px;
-  --title-decor: #ff8dcb;
-  --unique-decoration-color: #353430;
-  --footer-bg-color: #ffc2e6;
-  --button-bg-color: #353430; /* ← добавлено */
-  
-  background-image: url(../images/cover-image-light.png);
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  --background-color:#fff1f7;
+  --title-color:#ffc2e6;
+  --text-background-decorate-color:#ff8dcb;
+  --text-first-color:#353430;
+  --button-color:#353430;
+  --second-color:#353430;
+  --description-color:#353430;
+  --decor-color:#353430;
+  --title-shadow-color:#ff8dcb;
+  --title-footer-shadow-color:#ff8dcb;
+  --link-shadow-color:#ff8dcb;
+  --button-hover-color:#32312D66;
 }
 
-@media (prefers-color-scheme: light) {
-  .page.theme-auto {
-    --background-color: #fff1f7;
-    --main-text-color: #353430;
-    --heading-text-color: #353430;
-    --subtitle-text-color: #353430;
-    --button-text-color: #353430;
-    --corner-color: #353430;
-    --unique-decoration-color: #353430;
-    --brand-accent: #ff8dcb;
-    --title-decor: #ff8dcb;
-    --shadow-color: #FF0070;
-    --header-bg-color: #ffc2e6;
-    --footer-bg-color: #ffc2e6;
-    --button-hover-bg: rgba(50, 49, 45, 0.40);
-    --rec-element-color: transparent;
-    --font-family: 'IBM Plex Mono', monospace;
-    --text-font-size: 18px;
-    --text-line-height: 23.4px;
-    --gap-small: 12px;
-    --gap-medium: 23px;
-    --button-bg-color: #353430;
-    
-    background-image: url(../images/cover-image-light.png);
+@media (width>=1024px) {
+  :root.theme-light {
+    --title-footer-shadow-color:#ff0070;
   }
+}
+.theme-light .page {
+  --main-background-color: var(#fff1f7);
+  --page-background-image: url("../images/cover-image-light.png");
 }

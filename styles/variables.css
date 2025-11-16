@@ -1,5 +1,12 @@
 :root {  
-  /*Цвета*/
+  --page-background-image:url("../images/cover-image-light.png");
+  --font-family:'IBM Plex Mono';
+  --bold-text-weight:700;
+  --font-size:18px;
+  --page-line-height:23.4px;
+  --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --page-padding:10px;
+  --cards-gap:10px;
   --bg-color:#fff1f7;
   --title-color:#ffc2e6;
   --text-background-decorate-color:#ff8dcb;
@@ -10,17 +17,6 @@
   --title-shadow-color:#ff8dcb;
   --title-footer-shadow-color:#ff8dcb;
   --link-shadow-color:#ff8dcb;
-  /*Задний фон*/
-  --page-background-image:url("../images/cover-image-light.png");
-  /*Типография*/
-  --main-font-family:'IBM Plex Mono';
-  --bold-text-weight:700;
-  --font-size:18px;
-  --page-line-height:23.4px;
-  --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /*Размеры*/
-  --page-padding:10px;
-  --cards-gap:10px;
 }
 @media (width>=1024px) {
   :root {

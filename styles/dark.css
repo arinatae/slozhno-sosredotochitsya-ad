@@ -48,18 +48,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+  --title-shadow-color:#FF0070;
+  --brand-accent:#FF0070;
+  --title-footer-shadow-color:#FF0070;
+  --btn-color:#FF0070;
+  --topic-description-color:#F1B2CE;
+  --button-hover-color:#FF007066;
+  --link-shadow-color:#FF0070;
+  --main-text-color:#000028;
+  --decoration-color:#FF0070;
   --bg-color:#000028;
   --title-color:#DB00FF;
-  --brand-accent:#FF0070;
-  --main-text-color:#000028;
-  --btn-color:#FF0070;
   --second-color:#FF0070;
-  --topic-description-color:#F1B2CE;
-  --decoration-color:#FF0070;
-  --title-shadow-color:#FF0070;
-  --title-footer-shadow-color:#FF0070;
-  --link-shadow-color:#FF0070;
-  --button-hover-color:#FF007066;
   }
 
   .page {

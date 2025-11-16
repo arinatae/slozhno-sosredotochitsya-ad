@@ -22,20 +22,20 @@ p {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 picture {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 button,
 a {
-  color: currentColor;
-  font-family: inherit;
   font-size: inherit;
+  font-family: inherit;
   line-height: inherit;
+  color: currentColor;
 }

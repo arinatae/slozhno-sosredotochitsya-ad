@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   background-image: var(
-    --page-background-image,
+    --page-bg-image,
     url("../images/cover-image-light.png")
   );
   background-attachment: fixed;
@@ -90,7 +90,7 @@
 .header__heading {
   color: var(--title-color);
   grid-column: 1 / 3;
-  text-shadow: 4px 4px 0 var(--title-shadow-color);
+  text-shadow: 4px 4px 0 var(--shdw-title-color);
   justify-self: start;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -99,38 +99,38 @@
 /*основная зона сайта для читателей*/
 
 .main__area {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: column;
-  row-gap: 50px;
-  margin-block: 40px;
   padding-inline: 10px;
+  grid-auto-flow: column;
+  display: grid;
+  margin-block: 40px;
+  row-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main__area-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1 / 4;
+  display: grid;
   gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main__area-section__heading {
-  grid-column: 1 / 4;
-  color: var(--second-color);
-  font-weight: var(--bold-text-weight);
   font-size: var(--font-size);
+  grid-column: 1 / 4;
+  color: var(--scd-color);
   line-height: var(--page-line-height);
+  font-weight: var(--text-wght-bold);
 }
 
 /*5 простых советов...*/
 
 .main__area-section__advices {
-  grid-column: 1 / 4;
-  color: var(--topic-description-color);
-  font-weight: var(--bold-text-weight);
+  background-color: var(--main-text-color);
   font-size: var(--font-size);
+  color: var(--topic-description-color);
+  grid-column: 1 / 4;
   line-height: var(--page-line-height);
-  background-color: var(--first-text-color);
+  font-weight: var(--text-wght-bold);
 }
 
 .main__area-card {
@@ -159,7 +159,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: column;
   grid-column: 1 / 4;
-  gap: var(--cards-gap,10px);
+  gap: var(--gap-card,10px);
 }
 
 .main__area-visual-set__heading {
@@ -178,7 +178,7 @@
   background-color: var(--brand-accent, #FF8DCB);
   color: var(--main-text-color);
   font-size: var(--font-size);
-  font-weight: var(--bold-text-weight);
+  font-weight: var(--text-wght-bold);
   line-height: var(--page-line-height);
 }
 
@@ -186,13 +186,13 @@
 
 .link-external {
   text-decoration: none;
-  text-shadow: 2px 2px 2px var(--link-shadow-color, #FF8DCB);
+  text-shadow: 2px 2px 2px var(--shdw-link-color, #FF8DCB);
   cursor: pointer;
 }
 
 .link-external:hover {
   text-decoration: underline;
-  text-shadow: 2px 2px 2px var(--link-shadow-color, #FF8DCB);
+  text-shadow: 2px 2px 2px var(--shdw-link-color, #FF8DCB);
 }
 
 .link-external:focus-visible {
@@ -213,7 +213,7 @@
   justify-self: center;
   line-height: 83%;
   color: var(--title-color, #ffc2e6);
-  text-shadow: var( --footer-text-shadow, 2px) var( --footer-text-shadow, 2px) var(--title-footer-shadow-color, #ff0070);
+  text-shadow: var( --footer-text-shadow, 2px) var( --footer-text-shadow, 2px) var(--shdw-footer-title-color, #ff0070);
   font-weight: var( --title-font-weight, 700);
   align-self: center;
   font-size: var(--title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));

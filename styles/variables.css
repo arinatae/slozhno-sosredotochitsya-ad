@@ -1,26 +1,26 @@
 :root {
-  --title-footer-shadow-color:#ff8dcb;
+  --shdw-footer-title-color:#ff8dcb;
   --font-family:'IBM Plex Mono';
-  --title-shadow-color:#ff8dcb;
+  --shdw-title-color:#ff8dcb;
   --page-padding:10px;
   --font-size:18px;
   --bg-color:#fff1f7;
   --page-line-height:23.4px;
-  --cards-gap:10px;
-  --second-color:#353430;
+  --gap-card:10px;
+  --scd-color:#353430;
   --title-font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-text-color:#353430;
-  --bold-text-weight:700;
+  --text-wght-bold:700;
   --topic-description-color:#353430;
-  --text-background-decorate-color:#ff8dcb;
+  --text-bg-decorate-color:#ff8dcb;
   --decoration-color:#353430;
-  --link-shadow-color:#ff8dcb;
+  --shdw-link-color:#ff8dcb;
   --title-color:#ffc2e6;
-  --page-background-image:url("../images/cover-image-light.png");
+  --page-bg-image:url("../images/cover-image-light.png");
 }
 
 @media (width>=1024px) {
   :root {
-    --title-footer-shadow-color:#ff0070;
+    --shdw-footer-title-color:#ff0070;
   }
 }
